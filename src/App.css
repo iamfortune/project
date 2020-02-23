@@ -1,0 +1,123 @@
+.App {
+    background-color: #fff;
+}
+
+#nav-sidebar {
+    position: fixed;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    min-height: 100vh;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    width: 50px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 9999;
+    padding: 4em 0;
+    background: #196BD8;
+    overflow-x: hidden;
+    overflow-y: auto;
+    white-space: nowrap;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -webkit-box-shadow: 0 .15rem 1.75rem 0 rgba(58, 59, 69, .35) !important;
+    box-shadow: 0 .15rem 1.75rem 0 rgba(58, 59, 69, .35) !important;
+}
+
+.sidebar-expand {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    position: absolute;
+    top:20px;
+    left: 15px;
+}
+.sidebar-expand.mobile {
+    display: none;
+}
+
+.sidebar-expand i {
+    color: #fff;
+    font-size: 16px;
+    display: inline-block;
+}
+
+.nav-pills .nav-link {
+    color: #fff !important;
+    display: inline-block;
+    margin:10px 0;
+    font-size: 16px;
+}
+.nav-pills .nav-link i {
+    display: inline-block;
+    margin-right: 1.6rem;
+}
+.sidebar-header {
+    padding: 0 1rem;
+}
+
+#nav-sidebar.active {
+    width: 250px;
+    min-width: 0;
+}
+@media (max-width:767px) {
+    .sidebar-expand {
+        display: none;
+    }
+    .sidebar-expand.mobile {
+        display: inline;
+        color: #196BD8;
+    }
+
+    #nav-topbar .brand-container,
+    #nav-sidebar {
+            width: 0;
+    }
+
+    #nav-topbar .brand-container.active,
+    #nav-sidebar.active {
+            width: 80%;
+            min-width: 0;
+    }
+
+    #nav-sidebar.active .sidebar-content {
+            display: block !important;
+    }
+
+    .sidebar-expand i {
+            display: inline;
+    }
+}
+
+.sidebar-content .nav {
+    padding: 3em 0;
+}
+
+
+#appMain {
+    margin-left: 50px;
+    padding: 0 !important;
+    width: 100%;
+    overflow-x: hidden;
+    min-height: 100vh;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+}
+
+#appMain.active {
+    margin-left: 250px;
+}
+
+@media (max-width:767px) {
+    #appMain {
+        margin-left: 0;
+        
+    }
+}
