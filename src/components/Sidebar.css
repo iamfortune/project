@@ -1,0 +1,52 @@
+.menu {
+    position: fixed;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    min-height: 100vh;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 9999;
+    padding: 4em 0;
+    background: #196BD8;
+    overflow-x: hidden;
+    overflow-y: auto;
+    white-space: nowrap;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -webkit-box-shadow: 0 .15rem 1.75rem 0 rgba(58, 59, 69, .35) !important;
+    box-shadow: 0 .15rem 1.75rem 0 rgba(58, 59, 69, .35) !important;
+    width: 50px;
+  }
+
+  .menu_toggle {
+      z-index: 100;
+      position: absolute;
+      top: 20px;
+      right: 10px;
+
+  }
+ 
+  .active {
+    width: 250px;
+    visibility: visible;
+    transition: all 0.25s ease;
+    transform: translateX(0);
+  }
+  @-webkit-keyframes fadeInRight {
+    0% {
+      opacity: 0;
+      left: 20%;
+    }
+    100% {
+      opacity: 1;
+      left: 0;
+    }
+  }
+  

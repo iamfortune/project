@@ -2,31 +2,8 @@
     background-color: #fff;
 }
 
-#nav-sidebar {
-    position: fixed;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    min-height: 100vh;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    width: 50px;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 9999;
-    padding: 4em 0;
-    background: #196BD8;
-    overflow-x: hidden;
-    overflow-y: auto;
-    white-space: nowrap;
-    transition: all 0.5s ease;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    -webkit-box-shadow: 0 .15rem 1.75rem 0 rgba(58, 59, 69, .35) !important;
-    box-shadow: 0 .15rem 1.75rem 0 rgba(58, 59, 69, .35) !important;
+.c_padding {
+    padding:2.8rem;
 }
 
 .sidebar-expand {
@@ -97,7 +74,21 @@
 .sidebar-content .nav {
     padding: 3em 0;
 }
+.navbar {
+    padding: 1rem 2.8rem !important;
+    box-shadow: 0px 3px 50px #1877FF1C;
+opacity: 1;
+}
 
+.navbar .navbar-brand img {
+    width: 120px;
+}
+.navbar .navbar-nav .nav-item .navIcon {
+    width: 20px;
+}
+.navbar .navbar-nav .nav-item a {
+    color: #1c1c1c;
+}
 
 #appMain {
     margin-left: 50px;
@@ -120,4 +111,27 @@
         margin-left: 0;
         
     }
+}
+.table th {
+    font-size: 16px;
+}
+.table td {
+    font-size: 14px;
+}
+
+.item_fluid {
+    display: inline-flex;
+}
+
+.item_fluid img {
+    width: 50px;
+    object-fit: contain;
+}
+.item_fluid span {
+    padding-left: 10px;
+}
+.item_fluid i {
+    font-size: 18px;
+    padding-top: 10px;
+    color: #666;
 }

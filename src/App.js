@@ -1,29 +1,12 @@
 import React from 'react'
 import Sidebar from './components/Sidebar'
 import Topnav from './components/Topnav'
+import Table from './components/Table'
 import './App.css'
 import $ from 'jquery';
+
+
 class App extends React.Component {
-  componentDidMount() {
-    $(document).ready(function() {
-
-      $('.sidebar-expand i').click(function() {
-        $('#nav-sidebar').toggleClass("active");
-      });
-      
-      $('.sidebar-expand i').click(function() {
-        $('#appMain').toggleClass("active");
-      });
-      //Customize Bootstrap dropdown speed
-      $('.dropdown').on('show.bs.dropdown', function(e) {
-        $(this).find('.dropdown-menu').first().stop(true, true).slideDown(300);
-      });
-
-      $('.dropdown').on('hide.bs.dropdown', function(e) {
-        $(this).find('.dropdown-menu').first().stop(true, true).slideUp(200);
-      });
-    });
-  }
 
   render() {
     return (
@@ -33,12 +16,20 @@ class App extends React.Component {
         <Sidebar/>
         <main id="appMain" className="appMain">
         <Topnav/>
-        <h4 className=""> <img src={require('./components/prod.png')} /> Production House</h4>
+     <div className="dashboard_area c_padding">
+       <div className="ds_heading">
+     <h4> <img src={require('./components/prod.png')} /> Production House</h4>
+     </div>
+
+     <Table />
+
+
+     </div>
         </main>
         </div>
         </div>
-     
       </div>
+     
     )
   }
 }
