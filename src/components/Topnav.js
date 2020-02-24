@@ -9,12 +9,14 @@ class Topnav extends React.Component {
             Menu
           </span>  */}
         <a className="navbar-brand" href="#"> 
-      {/* <img src="{require(./images/logo.png)}"/> */}
+          <img src={require('./logo.png')} />
         </a>
 
         <ul className="navbar-nav ml-auto">
           <li className="nav-item isHiddenOnMobile">
-            <a href="deposit.html" className="btn dash_btn">Deposit <i className="ti-credit-card"></i></a>
+            <a href="deposit.html" className="btn dash_btn">
+            <img src={require('./mg.png')} />
+               <i className="ti-credit-card"></i></a>
           </li>
           <li className="nav-item isHiddenOnMobile">
             <a href="#" className="btn dash_btn">Download <i className="ti-download"></i></a>
