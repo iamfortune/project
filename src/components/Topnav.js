@@ -5,9 +5,6 @@ class Topnav extends React.Component {
     return (
 
       <nav className="navbar navbar-expand topbar ">
-{/* <span className="sidebar-expand mobile">
-            Menu
-          </span>  */}
         <a className="navbar-brand" href="#"> 
           <img src={require('./logo.png')} />
         </a>
