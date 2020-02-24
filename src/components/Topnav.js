@@ -16,27 +16,11 @@ class Topnav extends React.Component {
                <i className="ti-credit-card"></i></a>
           </li>
           <li className="nav-item isHiddenOnMobile">
-            <a href="#" className="btn dash_btn">Download <i className="ti-download"></i></a>
+            <a href="#" className="btn dash_btn"> <img src={require('./msg.png')} /> Messsage<i className="ti-download"></i></a>
           </li>
-          <li className="nav-item">
-            <span className="bal nav-link"> <i className="ti-wallet"></i><em> ₦</em> 2,478</span>
-          </li>
-
           <li className="nav-item dropdown no-arrow">
             <a className="nav-link dropdown-toggle  hide_arrow" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <span className="mr-2 d-none d-lg-inline text-gray-600 user">Hello User</span>
-              <span className="ti-user"></span>
-            </a>
-          
-            <div className="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
-              <a className="dropdown-item dropDownLink" href="notifications.html">
-                <i className="ti-bell"></i> Notifications
-              </a>
-              <div className="dropdown-divider"></div>
-                          <a className="dropdown-item dropDownLink" href="login.html">
-                <i className="ti-power-off"></i> Logout
-              </a>
-            </div>
+              <span className="mr-2 d-none d-lg-inline text-gray-600 user"><img src={require('./cart.png')} /> Market Place</span></a>
           </li>
         </ul>
       </nav>
@@ -44,4 +28,4 @@ class Topnav extends React.Component {
   }
 }
 
-export default Topnav
+export default Topnav;
