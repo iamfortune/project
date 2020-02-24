@@ -43,11 +43,35 @@ render() {
             <td>Running 2 of 5</td>
             </tr>
             </tbody>
+            <tbody>
+          <tr>
+          <td>
+          <div class="custom-control custom-checkbox">
+                  <input type="checkbox" className="custom-control-input" id="customCheck1"/>
+                  <label className="custom-control-label" for="customCheck1">1</label>
+              </div>
+            </td>
+            <td>#835235783df37f78</td>
+            <td>#835235783df37f78</td>
+            <td className="item_fluid"><img src={require('./shirt_image_sm.png')} /><span>No Minimum - More Color Available - Gildan unisex ultra cotton T- shirt (NY1)</span></td> 
+            <td><span className="badge badge-primary p-2">Royal</span></td>
+            <td>LX4 </td>
+            <td>DTG Print</td>
+            <td className="item_fluid" className="pickup_order"><span className="text-danger">Pickup Order</span> </td>
+            <td>
+              <span>23 - June - 2019</span>
+              <span>Time Left <em>10:00:00</em></span>
+            </td>
+            <td>Running 2 of 5</td>
+            </tr>
+            </tbody>
           </table>
     </div>
-
-      )
+    
+    )
 }
     }
   
+
+
 export default Table;

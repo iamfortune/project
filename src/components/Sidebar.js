@@ -5,7 +5,9 @@ const navLinks = [
 	{ url: '/about-us', name: 'Dashboard', icon:'fa fa-th-large'},
 	{ url: '/projects', name: '	Operations', icon:'fa fa-clock-o'},
 	{ url: '/services', name: 'Records', icon:'fa fa-file'},
-	{ url: '/contact-us', name: 'Contact Us' },
+	{ url: '/contact-us', name: 'Supply Store', icon: 'fa fa-shopping-cart'},
+	{ url: '/contact-us', name: 'Market Place', icon: 'fa fa-dropbox'},
+	{ url: '/contact-us', name: 'Forums', icon: 'fa fa-comments'},
   ];
   
 
@@ -52,39 +54,8 @@ class Sidebar extends React.Component {
           </ul>
         </div>
       </div>
-       	{/* <div className="sidebar-brand">
-         <span className="sidebar-expand">
-										<i className="fa fa-bars"></i>
-									</span>
-           <div>
-										<ul className="nav nav-pills flex-column">
-											<li className="nav-item ">
-												<a className="nav-link isActive" href=""> <i className="fa fa-th-large"></i> Dashboard <span className="sr-only">(current)</span></a>
-											</li>
-										
-											<li className="nav-item ">
-											</li>
-												<a className="nav-link" href=""> <i className="fa fa-clock-o"></i> Operations </a>
-											<li className="nav-item ">
-												<a className="nav-link" href=""> <i className="fa fa-file"></i> Records</a>
-											</li>
-											<li className="nav-item ">
-												<a className="nav-link" href=""> <i className="fa fa-shopping-cart"></i> Supply Store </a>
-											</li>
-  
-											<li className="nav-item ">
-												<a className="nav-link" href=""> <i className="fa fa-dropbox"></i> Marketplace </a>
-											</li>
-										
-											<li className="nav-item ">
-											</li>
-												<a className="nav-link" href=""> <i className="fa fa-comments"></i> Forums</a>
-											
-										</ul>
-                    </div>
-									</div> */}
-								</div>
-
+	  </div>
+       
     )
   }
 }
