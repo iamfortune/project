@@ -33,7 +33,7 @@ class App extends React.Component {
         <Sidebar/>
         <main id="appMain" className="appMain">
         <Topnav/>
-        <h1>Main</h1>
+        <h4 className=""> <img src={require('./components/prod.png')} /> Production House</h4>
         </main>
         </div>
         </div>

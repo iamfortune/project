@@ -23,7 +23,11 @@ class Topnav extends React.Component {
               <span className="mr-2 d-none d-lg-inline text-gray-600 user"><img src={require('./cart.png')} /> Market Place</span></a>
           </li>
           <li className="nav-item isHiddenOnMobile">
-            <a href="#" className="btn dash_btn"><i class="fas fa-list-ul"></i> Notifications<i className="ti-download"></i></a>
+            <a href="#" className="btn dash_btn"> <i class="fas fa-list-ul"></i> Notifications<i className="ti-download"></i></a>
+          </li>
+          <li className="nav-item dropdown no-arrow">
+            <a className="nav-link dropdown-toggle  hide_arrow" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <span className="mr-2 d-none d-lg-inline text-gray-600 user"><img src={require('./pro.svg')} /> Me</span></a>
           </li>
         </ul>
       </nav>
