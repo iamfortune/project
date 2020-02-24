@@ -14,3 +14,5 @@ this is to run the project in the browser.
 ### `npm run build`
 
 Builds the app for production to the `build` folder
+
+### `this project is hosted here https://projectfetest.netlify.com`
