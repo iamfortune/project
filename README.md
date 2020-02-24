@@ -2,7 +2,7 @@
 
 ### `cd into project directory and run the following commands`
 
-###NOTE 
+### `NOTE` 
 - `make sure you have npm/nodejs installed`
 
 ### `npm install`
