@@ -39,11 +39,12 @@ class Sidebar extends React.Component {
 		}        
 	  }
 
+	  
   render() {
     return (
       <div id="nav-sidebar" className="container-fluid">
 		        <div>
-        <button onClick={this.handleClick} className="menu_toggle">menu</button>
+        <button onClick={this.handleClick} className="menu_toggle">Menu</button>
         <div className={this.state.style}>               
           <ul className="nav nav-pills flex-column">
             {navLinks.map(({ url, name, icon }) => (
@@ -55,8 +56,13 @@ class Sidebar extends React.Component {
         </div>
       </div>
 	  </div>
-       
-    )
+
+ 
+	
+	  )
+	}
   }
-}
+
+       
+    
 export default Sidebar
